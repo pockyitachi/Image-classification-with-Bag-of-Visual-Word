@@ -110,6 +110,7 @@ for image_pat in image_paths:
 
 '''
 '''
+
 # Appending SIFT descriptors of the training images in list
 for image_pat in image_paths:
     im = cv2.imread(image_pat)
@@ -184,6 +185,7 @@ def calacc(k):
         else:
             predict_classes.append("gatto")
 
+    #Show Accuracy
     accuracy = accuracy_score(true_classes, predict_classes)
     print('arr' + str(accuracy))
     return accuracy
