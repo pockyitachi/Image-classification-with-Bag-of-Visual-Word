@@ -1,0 +1,15 @@
+name: Greeting contributors
+on:
+  push:
+    branches: [ main] 
+    pull_request: [ main ]
+jobs: 
+  Greeting Contributors:
+    runs-on: ubuntu-latest
+    steps:
+    - name: "Greet contributor"
+      uses: ibakshay/greet-contributors-action@v3
+      
+      with: 
+        content: "<Welcome>"
+      
